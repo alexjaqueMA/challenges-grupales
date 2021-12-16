@@ -1,0 +1,120 @@
+:root {
+    --Very-dark-grayish-blue: hsl(237, 12%, 33%);
+    -- Dark-grayish-blue: hsl(240, 6%, 50%);
+    -- Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    -- Soft-red: hsl(14, 88%, 65%);
+
+}
+
+body{
+  
+    background-image: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    height: 100%; 
+    width: 100%; 
+}
+
+@media only screen and (max-width: 1440px) {
+    
+/*Tamaño del body y su gradiente*/
+body{
+  
+    background-image: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    height: 1440px; 
+    width: 1440px; 
+}
+
+/*----------------contenedor principal de la card --------------------*/
+.container{
+    display: flex;
+    flex-direction: row;
+    background: white;
+
+    border-radius: 3em;
+    height: 500px;
+    width: 75%;
+    position: absolute;
+    align-items: center;
+    top: 70%;
+    left: 15%;
+    /* margin: 100px; */
+    overflow: hidden;
+ }
+
+.subcontainer{
+    
+    padding: 35px;
+    width: 80%;
+}
+
+
+ul{
+    text-decoration: none;
+    text-align: left;
+    padding: 0%;
+    border-bottom: 1px solid hsl(240, 6%, 50%);
+}
+
+ul :hover{
+    color: hsl(14, 88%, 65%);
+}
+
+li{
+    list-style: none;
+    text-align: left;
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.25s;
+    color: hsl(240, 6%, 50%);
+}
+
+.menu__linksubmenu{
+
+    text-decoration: none;
+}
+.img_card{
+    background-image: url(./images/illustration-woman-online-desktop.svg), url(./images/bg-pattern-desktop.svg);
+    background-position: -10% 55%, 102% -12%;
+    background-repeat: no-repeat, no-repeat;
+    height: 1000px;
+    width: 73%;
+    position: relative;
+    align-items: center;
+    top: -60px;
+    left: -70px;
+    position: relative;
+}
+
+.part_1{
+
+    position: absolute;
+    top: 265px;
+    left: 89px;
+    z-index: 1;
+}
+
+.arroba_card{
+    position: absolute;
+    z-index: 1;
+    top: 485px;
+    left: 0px;
+}
+
+.wrapper{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.info_card{
+
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+
+}
+
+.menu-dropdown1__ container-submenu{
+    
+}
+}
