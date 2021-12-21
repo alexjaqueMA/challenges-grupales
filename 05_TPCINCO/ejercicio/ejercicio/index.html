@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+  
+    <!--Encierra el contenido de la pagina a nivel general/TODO-->
+
+    <div class="wrapper">
+
+        <!--imagen del arroba declarada por fuera del contenedor(objetivo:quede por encima del contenedor)-->
+
+            <div class="img_arroba"> </div>
+        
+
+            <!--Contenedor de las imagenes y informacion en conjunto-->
+
+            <div class="container">
+                
+                <!--Aca declaramos la etiqueta div "img_card" para agregar las imagenes superpuestas desde CSS-->
+
+                <div class="img_card"> </div>
+                
+                <!--"subcontainer" engloba dentro de un div todo el contenido text/info para modificar, margen/ancho/altura desde CSS-->
+
+                <div class="subcontainer">
+                
+                <!--"info_card" contiene el texto plano directamente-->
+
+                <div class="info_card">
+                       
+                      <!--Titulo principal de la card--> 
+                       <h1>FAQ</h1>
+                       
+                      <!--lista no ordenada ul para contener el subtitulo el cual contiene el texto que sigue debajo--> 
+                       <ul class="menu-dropdown1" id="menu">
+                           
+                         <!--atribucion contiene el title como referencia y ademas usamos la funcion onclick para ejecutar la funcion clickear para desplegar el texto(esto lo haremos desde JS)--> 
+                        <a  href="#" class="menu__linksubmenu1" onclick="cambiar('ejemplo'); return false; ">
+                            
+                            <h3>How many team members can I invite?</h3> <img class="icon-arrow-down" id="icon-arrow-down" src="./images/icon-arrow-down.svg" height="10px" width="14px">
+                        
+                        </a>
+                       <!--item list li contiene el texto en a mostrar --> 
+                                <li class="menu-dropdown1__ container-submenu1">
+                                    
+                                    <!--DISPLAY NONE Se trata de un párrafo normal que al recibir un click esconde o muestra alternativamente el contenido de un elemento DIV-->
+                                    <div id="ejemplo" style="display: none; ">
+            
+                                     <p>   You can invite up to 2 additional users on the Free plan. There is no limit on 
+                                         team members for the Premium plan.</p>
+                                        
+                                    </div>
+                                    
+                                </li>
+
+                       </ul>
+                        
+                       <!--LO ANTERIOR SE REPITE CUATRO VECES CON LOS DISTINTOS SUBTITULOS Y SUS TEXTOS CORRESPONDIENTES-->
+                       
+                       
+                        <ul class="menu-dropdown2" id="menu">
+
+                            <a href="#" class="menu__linksubmenu2" onclick="cambiar('ejemplo2'); return false;">
+                            
+                            
+                            <h3> What is the maximum file upload size?</h3> <img class="icon-arrow-down" id="icon-arrow-down" src="./images/icon-arrow-down.svg"height="10px" width="14px"></img>
+                        
+                            </a> 
+                            
+                                <li class="menu-dropdown2__ container-submenu2">
+
+                                    <div id="ejemplo2" style="display: none;">
+
+                                     <p> No more than 2GB. All files in your account must fit your allotted storage space.</p>
+                                    
+                                    </div>
+
+                                </li> 
+
+                        </ul> 
+
+                        <ul class="menu-dropdown3" id="menu">
+                            
+                            <a href="#" class="menu__linksubmenu3" onclick="cambiar('ejemplo3'); return false;">
+                            
+                                
+                                <h3>How do I reset my password? </h3> <img class="icon-arrow-down" src="./images/icon-arrow-down.svg" height="10px" width="14px"></img>
+                        
+                            </a>
+                               
+                               <li class="menu-dropdown3__ container-submenu3">
+
+                                   <div id="ejemplo3" style="display: none;">
+
+                                    <p> Click “Forgot password” from the login page or “Change password” from your profile page.
+                                    A reset link will be emailed to you.</p>
+                                   
+                                   </div>
+
+                               </li>
+                        </ul> 
+                    
+                        <ul class="menu-dropdown4" id="menu" >
+                            
+                                <a href="#" class="menu__linksubmenu4" onclick="cambiar('ejemplo4'); return false;">
+                            
+                            
+                                 <h3>Can I cancel my subscription? </h3> <img class="icon-arrow-down" src="./images/icon-arrow-down.svg" height="10px" width="14px"></img>
+                                
+                                
+                                </a> 
+                            
+                                <li class="menu-dropdown4__ container-submenu4"> 
+
+                                    <div id="ejemplo4" style="display: none;">
+
+                                    <p> Yes! Send us a message and we´ll process your request no questions asked.</p>
+                                    
+                                    </div>
+
+                                </li>
+                        
+                        </ul>
+
+                        <ul class="menu-dropdown5" id="menu" >
+                            
+                            <a href="#" class="menu__linksubmenu5" onclick="cambiar('ejemplo5'); return false;">
+                            
+                             
+                                <h3>Do you provide additional support?</h3>  <img class="icon-arrow-down" src="./images/icon-arrow-down.svg" height="10px" width="14px"></img>
+                            
+                            </a>
+                           
+                            <li class="menu-dropdown5__ container-submenu5">
+                                    
+                                <div id="ejemplo5" style="display: none;">
+
+                                    <p> Chat and email support is available 24/7. Phone lines are open during normal business hours.</p></li> 
+                               
+                                </div>
+                        </ul> 
+                    
+                </div>
+            </div>
+
+            </div>
+
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
